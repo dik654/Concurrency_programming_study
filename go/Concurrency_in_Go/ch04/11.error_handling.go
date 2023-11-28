@@ -33,7 +33,7 @@ func main() {
 				case <-done:
 					// 그러면 고루틴 종료
 					return
-				// 받은 요청이 있으면 responses 채널에 넘기기
+				// 받은 응답이 있으면 responses 채널에 넘기기
 				case responses <- resp:
 				}
 			}
