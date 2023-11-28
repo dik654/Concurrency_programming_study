@@ -36,7 +36,7 @@ func main() {
 				select {
 				case <-done:
 					return
-				// 인수로 들어온 함수
+				// 인수로 들어온 함수를 실행시킨 결과값
 				// 계속 채널로 넘기기
 				case valueStream <- fn():
 				}
